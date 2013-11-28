@@ -1,4 +1,7 @@
 /* Every post, on every page, gets this style on its <article> tag */
+body{
+	background: #E3E5E7 !important;
+}
 .post {
 	position: relative;
 	width: 92.5%;
@@ -57,4 +60,36 @@
 
 .content .post img {
 	margin: 2.5% auto;
+}
+
+.site-header{
+	position: relative;
+	height:250px;
+}
+.site-header{
+	background-size: cover;
+}
+
+.post .blog-logo {
+	position:absolute;
+	bottom:-30px;
+	left:-10px;
+}
+
+.post .blog-logo img {
+	height:50%;
+	width: 50%;
+}
+
+.post .blog-title {
+	position:absolute;
+	bottom:-10px;
+	left:100px;
+	font-size: 10px;
+}
+.post .blog-description {
+	position:absolute;
+	bottom:-22px;
+	left:100px;
+	font-size: 15px;
 }

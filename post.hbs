@@ -17,10 +17,10 @@
 
         {{! Everything below outputs content of the the post which has been published }}
 
-		<header class="post-header">
-        	<h1 class="post-title">{{title}}</h1>
-			<span class="post-meta">Posted on <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMMM YYYY'}}</time></span>
-		</header>
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <span class="post-meta">Posted on <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMMM YYYY'}}</time></span>
+        </header>
 
         <section class="post-content">
             {{content}}
@@ -30,16 +30,16 @@
 
             {{#if author}}
                 <section class="author-card cf">
-                	{{#if author.image}}
-	                	<div class="author-image">
-	                		<img src="{{author.image}}" alt="Author Image">
-	                	</div>
-	                {{/if}}
+                    {{#if author.image}}
+                        <div class="author-image">
+                            <img src="{{author.image}}" alt="Author Image">
+                        </div>
+                    {{/if}}
                     <div class="author-text" {{#if author.image}}style="width: 65%; float: left;"{{/if}}>
-	                    <span class="author-name">{{author.name}} </span>
-	                    {{#if author.website}}<a href="{{author.website}}" class="website" rel="author">Website</a>{{/if}}
-	                    {{#if author.bio}}<p class="author-bio">{{author.bio}}</p>{{/if}}
-	                </div>
+                        <span class="author-name">{{author.name}} </span>
+                        {{#if author.website}}<a href="{{author.website}}" class="website" rel="author">Website</a>{{/if}}
+                        {{#if author.bio}}<p class="author-bio">{{author.bio}}</p>{{/if}}
+                    </div>
                 </section>
             {{/if}}
             
